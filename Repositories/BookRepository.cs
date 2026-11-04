@@ -30,11 +30,3 @@ public class BookRepository : IBookRepository
 
     public async Task SaveChangesAsync() => await _context.SaveChangesAsync();
 }
-ooks.ToListAsync();
-
-    public async Task<Book?> GetByIdAsync(int id) => await _context.Books.FindAsync(id);
-
-    public async Task AddAsync(Book book) => await _context.Books.AddAsync(book);
-
-    public async Task SaveChangesAsync() => await _context.SaveChangesAsync();
-}
